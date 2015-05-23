@@ -1,0 +1,558 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ChefLib
+LIBS:ComponentLib
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Noodleboard"
+Date "23 may 2015"
+Rev "0.0.1"
+Comp "Javier Fernández Cepeda"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 10100 1950 0    60   Input ~ 0
+GND
+Text Label 10200 1950 0    60   ~ 0
+GND_USB
+Text HLabel 10100 1650 0    60   Input ~ 0
+3V30
+Text Label 10200 1650 0    60   ~ 0
+3V3_USB
+Text Notes 9850 1300 0    79   ~ 16
+Hierarchical Pins\n(External)\n
+$Comp
+L MICROUSBAB P1
+U 1 1 51751880
+P 2400 3700
+F 0 "P1" H 2800 4050 60  0000 C CNN
+F 1 "MICROUSBAB" H 2400 4050 60  0000 C CNN
+F 2 "" H 2400 3700 60  0000 C CNN
+F 3 "" H 2400 3700 60  0000 C CNN
+	1    2400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L USBLC6-4 IC3
+U 1 1 51751886
+P 3600 2800
+F 0 "IC3" H 3600 2500 60  0000 C CNN
+F 1 "USBLC6-4" H 3600 3100 60  0000 C CNN
+F 2 "" H 3600 2800 60  0000 C CNN
+F 3 "" H 3600 2800 60  0000 C CNN
+	1    3600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C19
+U 1 1 5175188C
+P 3600 2000
+F 0 "C19" H 3600 2100 40  0000 L CNN
+F 1 "100n" H 3606 1915 40  0000 L CNN
+F 2 "~" H 3638 1850 30  0000 C CNN
+F 3 "~" H 3600 2000 60  0000 C CNN
+	1    3600 2000
+	0    -1   -1   0   
+$EndComp
+Text Label 3200 2000 2    60   ~ 0
+GND_USB
+NoConn ~ 3450 3350
+$Comp
+L R R11
+U 1 1 517518C7
+P 1750 4450
+F 0 "R11" V 1830 4450 40  0000 C CNN
+F 1 "330" V 1757 4451 40  0000 C CNN
+F 2 "~" V 1680 4450 30  0000 C CNN
+F 3 "~" H 1750 4450 30  0000 C CNN
+	1    1750 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 517518CE
+P 2250 4450
+F 0 "D6" H 2250 4550 50  0000 C CNN
+F 1 "LED" H 2250 4350 50  0000 C CNN
+F 2 "~" H 2250 4450 60  0000 C CNN
+F 3 "~" H 2250 4450 60  0000 C CNN
+	1    2250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC850 Q1
+U 1 1 517518D4
+P 2550 4700
+F 0 "Q1" H 2550 4551 40  0000 R CNN
+F 1 "BC850" H 2550 4850 40  0000 R CNN
+F 2 "SOT-23" H 2450 4802 29  0000 C CNN
+F 3 "" H 2550 4700 60  0000 C CNN
+	1    2550 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 517518DA
+P 2800 5100
+F 0 "R12" V 2880 5100 40  0000 C CNN
+F 1 "10k" V 2807 5101 40  0000 C CNN
+F 2 "~" V 2730 5100 30  0000 C CNN
+F 3 "~" H 2800 5100 30  0000 C CNN
+	1    2800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 517518E0
+P 3100 4700
+F 0 "R13" V 3180 4700 40  0000 C CNN
+F 1 "47k" V 3107 4701 40  0000 C CNN
+F 2 "~" V 3030 4700 30  0000 C CNN
+F 3 "~" H 3100 4700 30  0000 C CNN
+	1    3100 4700
+	0    -1   -1   0   
+$EndComp
+Text Label 2650 5600 2    60   ~ 0
+GND_USB
+Text Label 1400 4450 2    60   ~ 0
+3V3_USB
+Text Label 1900 4050 2    60   ~ 0
+GND_USB
+NoConn ~ 7250 4300
+$Comp
+L R R20
+U 1 1 51752493
+P 6550 4100
+F 0 "R20" V 6630 4100 40  0000 C CNN
+F 1 "12k" V 6557 4101 40  0000 C CNN
+F 2 "~" V 6480 4100 30  0000 C CNN
+F 3 "~" H 6550 4100 30  0000 C CNN
+F 4 "1%" V 6550 4100 60  0001 C CNN "Tolerancia"
+	1    6550 4100
+	0    -1   -1   0   
+$EndComp
+Text Label 6150 4100 2    60   ~ 0
+GND_USB
+$Comp
+L OSCILLATOR OSC1
+U 1 1 517526E8
+P 6050 4700
+F 0 "OSC1" H 6050 4400 60  0000 C CNN
+F 1 "OSCILLATOR" H 6050 5100 60  0000 C CNN
+F 2 "" H 6050 4700 60  0000 C CNN
+F 3 "" H 6050 4700 60  0000 C CNN
+	1    6050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 517526F7
+P 5600 4650
+F 0 "C20" H 5600 4750 40  0000 L CNN
+F 1 "100n" H 5606 4565 40  0000 L CNN
+F 2 "~" H 5638 4500 30  0000 C CNN
+F 3 "~" H 5600 4650 60  0000 C CNN
+	1    5600 4650
+	1    0    0    -1  
+$EndComp
+Text Label 5600 4450 1    60   ~ 0
+3V3_USB
+Text Label 5600 5150 2    60   ~ 0
+GND_USB
+$Comp
+L R R19
+U 1 1 51752799
+P 6500 5150
+F 0 "R19" V 6400 5150 40  0000 C CNN
+F 1 "NP" V 6507 5151 40  0000 C CNN
+F 2 "~" V 6430 5150 30  0000 C CNN
+F 3 "~" H 6500 5150 30  0000 C CNN
+	1    6500 5150
+	1    0    0    -1  
+$EndComp
+Text Label 6500 5500 0    60   ~ 0
+GND_USB
+Text Label 7050 5400 0    60   ~ 0
+GND_USB
+Text HLabel 4950 3350 2    59   BiDi ~ 0
+VBUS_HS_0
+Wire Wire Line
+	10100 1650 10200 1650
+Wire Notes Line
+	9750 1100 9750 2300
+Wire Wire Line
+	10100 1950 10200 1950
+Wire Notes Line
+	9750 1100 10950 1100
+Wire Notes Line
+	10950 1100 10950 2300
+Wire Notes Line
+	10950 2300 9750 2300
+Wire Wire Line
+	1900 4050 2900 4050
+Connection ~ 2150 4050
+Connection ~ 2250 4050
+Wire Wire Line
+	2900 4050 2900 3900
+Connection ~ 2350 4050
+Connection ~ 2050 4050
+Wire Wire Line
+	2900 3600 7250 3600
+Wire Wire Line
+	2900 3700 7250 3700
+Wire Wire Line
+	3400 2000 3400 2200
+Wire Wire Line
+	3400 2200 3500 2200
+Wire Wire Line
+	3500 2200 3500 2250
+Wire Wire Line
+	3700 2200 3800 2200
+Wire Wire Line
+	3800 2200 3800 2000
+Wire Wire Line
+	3700 2200 3700 2250
+Wire Wire Line
+	3400 2000 3200 2000
+Wire Wire Line
+	3750 3350 3750 3600
+Connection ~ 3750 3600
+Wire Wire Line
+	3650 3350 3650 3700
+Connection ~ 3650 3700
+Connection ~ 3450 3500
+Wire Wire Line
+	1500 4450 1400 4450
+Wire Wire Line
+	2050 4450 2000 4450
+Wire Wire Line
+	2450 4450 2450 4500
+Wire Wire Line
+	2750 4700 2850 4700
+Wire Wire Line
+	2800 4850 2800 4700
+Connection ~ 2800 4700
+Wire Wire Line
+	2450 4900 2450 5400
+Wire Wire Line
+	2800 5400 2800 5350
+Wire Wire Line
+	2450 5400 2800 5400
+Wire Wire Line
+	2650 5400 2650 5600
+Connection ~ 2650 5400
+Wire Wire Line
+	3450 3500 3450 4800
+Wire Wire Line
+	2900 3500 7250 3500
+Wire Wire Line
+	6800 4100 7250 4100
+Wire Wire Line
+	6300 4100 6150 4100
+Connection ~ 5600 4850
+Connection ~ 5600 4450
+Wire Wire Line
+	6500 4450 6500 4200
+Wire Wire Line
+	6500 4200 7250 4200
+Wire Wire Line
+	6500 5500 6500 5400
+Wire Wire Line
+	6500 4900 6500 4850
+Wire Wire Line
+	7050 4700 7250 4700
+Wire Wire Line
+	8500 3500 9400 3500
+Wire Wire Line
+	8500 3600 9400 3600
+Wire Wire Line
+	8500 3700 9400 3700
+Wire Wire Line
+	8500 3800 9400 3800
+Wire Wire Line
+	8500 3900 9400 3900
+Wire Wire Line
+	8500 4000 9400 4000
+Wire Wire Line
+	8500 4200 9400 4200
+Wire Wire Line
+	8500 4300 9400 4300
+Wire Wire Line
+	8500 4400 9400 4400
+Wire Wire Line
+	8500 4500 9400 4500
+Wire Wire Line
+	8500 4600 9400 4600
+Wire Wire Line
+	8500 4700 8950 4700
+Wire Wire Line
+	8500 4100 9400 4100
+Wire Wire Line
+	8500 4800 9800 4800
+Connection ~ 8500 5000
+Wire Wire Line
+	8500 5000 9800 5000
+$Comp
+L C C27
+U 1 1 51753E6D
+P 9050 5200
+F 0 "C27" H 9050 5300 40  0000 L CNN
+F 1 "100n" H 9056 5115 40  0000 L CNN
+F 2 "~" H 9088 5050 30  0000 C CNN
+F 3 "~" H 9050 5200 60  0000 C CNN
+	1    9050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C26
+U 1 1 51753E7A
+P 8750 5200
+F 0 "C26" H 8750 5300 40  0000 L CNN
+F 1 "100n" H 8756 5115 40  0000 L CNN
+F 2 "~" H 8788 5050 30  0000 C CNN
+F 3 "~" H 8750 5200 60  0000 C CNN
+	1    8750 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 5000
+Connection ~ 8750 5000
+Text Label 9100 5000 0    60   ~ 0
+3V3_USB
+Text HLabel 9400 3500 2    59   BiDi ~ 0
+CLK
+Text HLabel 9400 3600 2    59   BiDi ~ 0
+DIR
+Text HLabel 9400 3700 2    59   BiDi ~ 0
+STP
+Text HLabel 9400 3800 2    59   BiDi ~ 0
+NXT
+Text HLabel 9400 3900 2    59   BiDi ~ 0
+D0
+Text HLabel 9400 4000 2    59   BiDi ~ 0
+D1
+Text HLabel 9400 4100 2    59   BiDi ~ 0
+D2
+Text HLabel 9400 4200 2    59   BiDi ~ 0
+D3
+Text HLabel 9400 4300 2    59   BiDi ~ 0
+D4
+Text HLabel 9400 4400 2    59   BiDi ~ 0
+D5
+Text HLabel 9400 4500 2    59   BiDi ~ 0
+D6
+Text HLabel 9400 4600 2    59   BiDi ~ 0
+D7
+Text Notes 750  1300 0    118  ~ 24
+USB_High_Speed
+Wire Wire Line
+	7050 5100 7050 5400
+$Comp
+L C C33
+U 1 1 517E4978
+P 9250 5200
+F 0 "C33" H 9250 5300 40  0000 L CNN
+F 1 "100n" H 9256 5115 40  0000 L CNN
+F 2 "~" H 9288 5050 30  0000 C CNN
+F 3 "~" H 9250 5200 60  0000 C CNN
+	1    9250 5200
+	1    0    0    -1  
+$EndComp
+Text Label 3800 2000 0    60   ~ 0
+VBUS_HS
+Connection ~ 7050 4700
+Wire Wire Line
+	8500 4900 8500 5200
+$Comp
+L CP1 C21
+U 1 1 5183A452
+P 6800 4900
+F 0 "C21" H 6650 5050 50  0000 L CNN
+F 1 "4u7" H 6650 4800 50  0000 L CNN
+F 2 "~" H 6800 4900 60  0000 C CNN
+F 3 "~" H 6800 4900 60  0000 C CNN
+	1    6800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C22
+U 1 1 5183A45F
+P 7050 4900
+F 0 "C22" H 7100 5000 50  0000 L CNN
+F 1 "4u7" H 7100 4800 50  0000 L CNN
+F 2 "~" H 7050 4900 60  0000 C CNN
+F 3 "~" H 7050 4900 60  0000 C CNN
+	1    7050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4600 7250 4600
+Wire Wire Line
+	7050 4700 7050 4600
+Connection ~ 8500 5100
+Connection ~ 9250 5000
+$Comp
+L C C23
+U 1 1 5183A9C0
+P 9500 5200
+F 0 "C23" H 9500 5300 40  0000 L CNN
+F 1 "100n" H 9506 5115 40  0000 L CNN
+F 2 "~" H 9538 5050 30  0000 C CNN
+F 3 "~" H 9500 5200 60  0000 C CNN
+	1    9500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB3300 IC5
+U 1 1 5183A1EF
+P 7900 4000
+F 0 "IC5" H 8200 4700 60  0000 C CNN
+F 1 "USB3300" H 7750 4700 60  0000 C CNN
+F 2 "~" H 7900 4000 60  0000 C CNN
+F 3 "~" H 7900 4000 60  0000 C CNN
+	1    7900 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6950 4400 2    60   ~ 0
+GND_USB
+Text Label 8950 4700 0    60   ~ 0
+GND_USB
+Wire Notes Line
+	6350 4950 6350 5350
+Wire Notes Line
+	6350 5350 6575 5350
+Wire Notes Line
+	6575 5350 6575 4950
+Wire Notes Line
+	6575 4950 6350 4950
+Text Notes 5825 5275 0    60   ~ 0
+NOT FITTED
+Wire Wire Line
+	7250 4300 7250 4300
+Wire Wire Line
+	6950 4400 7250 4400
+Wire Wire Line
+	7050 5100 7250 5100
+Connection ~ 7050 5200
+Wire Wire Line
+	6800 4700 6800 4500
+Wire Wire Line
+	6800 5100 6800 5200
+Wire Wire Line
+	6800 4500 7250 4500
+Wire Wire Line
+	6800 5200 7250 5200
+Wire Wire Line
+	5600 4850 5600 5150
+Wire Wire Line
+	8750 5400 8750 5450
+Wire Wire Line
+	8750 5450 9800 5450
+Wire Wire Line
+	9500 5450 9500 5400
+Wire Wire Line
+	9050 5400 9050 5450
+Connection ~ 9050 5450
+Wire Wire Line
+	9250 5400 9250 5450
+Connection ~ 9250 5450
+Text Label 9150 5600 0    60   ~ 0
+GND_USB
+Wire Wire Line
+	9150 5450 9150 5600
+Connection ~ 9150 5450
+Wire Notes Line
+	600  1000 600  6050
+Wire Notes Line
+	600  6050 11100 6050
+Wire Notes Line
+	11100 6050 11100 1000
+Wire Notes Line
+	11100 1000 600  1000
+Text HLabel 10100 1800 0    60   Input ~ 0
+5V0
+Wire Wire Line
+	10100 1800 10200 1800
+Text Label 10200 1800 0    60   ~ 0
+5V_USB
+Text Label 3450 5350 2    60   ~ 0
+GND_USB
+Wire Wire Line
+	3450 5200 3450 5350
+$Comp
+L CP1 C18
+U 1 1 517A93CA
+P 3450 5000
+F 0 "C18" H 3500 5100 50  0000 L CNN
+F 1 "4u7" H 3500 4900 50  0000 L CNN
+F 2 "~" H 3450 5000 60  0000 C CNN
+F 3 "~" H 3450 5000 60  0000 C CNN
+	1    3450 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7250 3900
+NoConn ~ 7250 4000
+NoConn ~ 7250 3800
+NoConn ~ 2900 3800
+NoConn ~ 3550 3350
+Wire Wire Line
+	4950 3350 4800 3350
+Wire Wire Line
+	4800 3350 4800 3500
+Connection ~ 4800 3500
+Text Label 4200 3500 0    60   ~ 0
+VBUS_HS
+$Comp
+L C C15
+U 1 1 51DAA14F
+P 9800 5200
+F 0 "C15" H 9800 5300 40  0000 L CNN
+F 1 "100n" H 9806 5115 40  0000 L CNN
+F 2 "~" H 9838 5050 30  0000 C CNN
+F 3 "~" H 9800 5200 60  0000 C CNN
+	1    9800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5000 9800 4800
+Wire Wire Line
+	9800 5450 9800 5400
+Connection ~ 9500 5450
+Connection ~ 9500 5000
+Wire Wire Line
+	3350 4700 3450 4700
+Connection ~ 3450 4700
+$EndSCHEMATC
