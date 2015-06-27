@@ -1,5 +1,7 @@
 # Noodleboard
-Arduino form factor board with USB 2.0 High speed based on STM32F405 MCU
+Arduino form factor board with USB 2.0 High speed based on STM32F405 MCU.
+It has been developed for the [MuBA project](https://gitlab.euridies.com/javi/MuBA)
+
 
 ![Noodleboard-Overview](http://gitlab.euridies.com/javi/Noodleboard/uploads/72b49e30eabfb5f61e07b3e0f217dd26/Noodleboard-Overview.png)
 
@@ -14,6 +16,3 @@ Arduino form factor board with USB 2.0 High speed based on STM32F405 MCU
  * Headers for programming and debugging through SWD protocol
 
 ## [Pin map](pin-map)
-
-
-
