@@ -1,4 +1,4 @@
-update=04/10/2015 11:08:05
+update=07/11/2015 18:25:08
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,16 +39,6 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=../ComponentLib;LocalLib
@@ -85,3 +75,13 @@ LibName29=contrib
 LibName30=valves
 LibName31=ChefLib
 LibName32=ComponentLib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

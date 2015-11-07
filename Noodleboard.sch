@@ -42,7 +42,7 @@ Date "2015-10-03"
 Rev "1.0.0"
 Comp "Javier Fernández Cepeda"
 Comment1 ""
-Comment2 ""
+Comment2 "http://javisfryingchips.com/portfolio/detail/noodleboard/"
 Comment3 "https://github.com/javifercep/Noodleboard"
 Comment4 "Kodillo compatible"
 $EndDescr
