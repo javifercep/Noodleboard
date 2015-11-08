@@ -38,11 +38,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 12
 Title "Noodleboard"
-Date "2015-10-03"
-Rev "1.0.0"
+Date "2015-11-08"
+Rev "1.0.1"
 Comp "Javier Fernández Cepeda"
 Comment1 ""
-Comment2 ""
+Comment2 "http://javisfryingchips.com/portfolio/detail/noodleboard/"
 Comment3 "https://github.com/javifercep/Noodleboard"
 Comment4 "Kodillo compatible"
 $EndDescr
